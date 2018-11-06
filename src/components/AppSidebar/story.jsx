@@ -24,13 +24,3 @@ storiesOf('AppSidebar', module)
       />
     </div>
   ))
-  .add('should not show Coming soon if active product is Analyze', () => (
-    <div style={{ width: '65px', height: '100%', display: 'flex' }}>
-      <AppSidebar
-        activeProduct="analyze"
-        translations={translations}
-        user={fakeUser}
-        environment={'production'}
-      />
-    </div>
-  ))

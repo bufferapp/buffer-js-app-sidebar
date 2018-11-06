@@ -53,7 +53,7 @@ const AppSidebar = ({ activeProduct, user, environment, onMenuItemClick }) => (
     <PopoverButton
       icon={<AnalyzeIcon />}
       active={activeProduct === 'analyze'}
-      label={`Analyze ${activeProduct === 'analyze' ? '' : '(Coming Soon)'}`}
+      label="Analyze"
       href="https://buffer.com/analyze"
       newWindow
     />
