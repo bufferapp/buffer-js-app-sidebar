@@ -21,7 +21,7 @@ class PopoverMenuItem extends PseudoClassComponent {
     }
     const subtitleStyle = {
       display: 'block',
-      fontSize: '.7rem',
+      fontSize: '.85rem',
       paddingTop: '.25rem',
     }
     const style = calculateStyles(
@@ -64,7 +64,7 @@ class PopoverMenuItem extends PseudoClassComponent {
             onClick={handleOnClick(onClick)}
             style={style}
           >
-            {children}
+            <span style={mainLinkStyle}>{children}</span>
           </a>
         )}
       </li>

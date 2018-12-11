@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@bufferapp/components": "3.0.2",
+    "@storybook/addon-actions": "^3.4.11",
     "@storybook/core": "^3.4.11",
     "@storybook/react": "^3.4.11",
     "babel-cli": "^6.26.0",

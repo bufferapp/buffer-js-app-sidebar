@@ -1,6 +1,9 @@
 import React from 'react'
+
 import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
 import { checkA11y } from 'storybook-addon-a11y'
+
 import AppSidebar from './index'
 
 const translations = {}
@@ -21,6 +24,8 @@ storiesOf('AppSidebar', module)
         translations={translations}
         user={fakeUser}
         environment={'production'}
+        onMenuItemClick={action('onMenuItemClick')}
+        onUpgradeToProClick={action('onUpgradeToProClick')}
       />
     </div>
   ))
