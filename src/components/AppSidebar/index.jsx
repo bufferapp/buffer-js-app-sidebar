@@ -33,7 +33,13 @@ const style = calculateStyles({
   },
 })
 
-const AppSidebar = ({ activeProduct, user, environment, onMenuItemClick }) => (
+const AppSidebar = ({
+  activeProduct,
+  user,
+  environment,
+  onMenuItemClick,
+  onUpgradeToProClick,
+}) => (
   <nav style={style} aria-label="sidebar" role="menubar">
     <BufferLogo />
 
@@ -94,6 +100,11 @@ const AppSidebar = ({ activeProduct, user, environment, onMenuItemClick }) => (
             >
               Preferences
             </PopoverMenuItem>
+            {activeProduct === 'publish' && (
+              <PopoverMenuItem href="#" onClick={onUpgradeToProClick}>
+                ★ Upgrade to Pro
+              </PopoverMenuItem>
+            )}
             <Divider color="sidebarBackgroundBlue" />
             <PopoverMenuItem
               href={logoutUrl({
@@ -119,6 +130,7 @@ AppSidebar.propTypes = {
   }).isRequired,
   environment: PropTypes.string.isRequired,
   onMenuItemClick: PropTypes.func.isRequired,
+  onUpgradeToProClick: PropTypes.func.isRequired,
 }
 
 AppSidebar.defaultProps = {

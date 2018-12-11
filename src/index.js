@@ -11,6 +11,11 @@ export default connect(
     environment: state.environment.environment,
   }),
   dispatch => ({
+    onUpgradeToProClick: () =>
+      dispatch({
+        type: 'MODALS__SHOW_UPGRADE_MODAL',
+        source: 'app_sidebar',
+      }),
     onMenuItemClick: ({ menuItemKey }) => {
       switch (menuItemKey) {
         case 'preferences':
