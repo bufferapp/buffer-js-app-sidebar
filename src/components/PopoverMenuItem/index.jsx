@@ -13,7 +13,7 @@ const handleOnClick = onClick => e => {
 
 class PopoverMenuItem extends PseudoClassComponent {
   render() {
-    const { href, children, subtitle, onClick } = this.props
+    const { href, children, subtitle, onClick, highlight } = this.props
     const mainLinkStyle = {
       display: 'block',
       color: '#fff',
@@ -40,12 +40,15 @@ class PopoverMenuItem extends PseudoClassComponent {
         hovered: this.state.hovered,
       },
     )
+    const listStyle = highlight ? { backgroundColor: '#1b2a3a' } : {}
+
     return (
       <li
         onMouseEnter={() => this.handleMouseEnter()}
         onMouseLeave={() => this.handleMouseLeave()}
         onFocus={() => this.handleFocus()}
         onBlur={() => this.handleBlur()}
+        style={listStyle}
       >
         {subtitle ? (
           <a
@@ -76,6 +79,11 @@ PopoverMenuItem.propTypes = {
   href: PropTypes.string,
   children: PropTypes.node,
   subtitle: PropTypes.node,
+  highlight: PropTypes.bool,
+}
+
+PopoverMenuItem.defaultProps = {
+  highlight: false,
 }
 
 export default PopoverMenuItem
