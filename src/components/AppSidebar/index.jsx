@@ -39,6 +39,9 @@ const AppSidebar = ({
   environment,
   onMenuItemClick,
   onUpgradeToProClick,
+  onReturnToClassicClick,
+  isProUpgradeUser,
+  isAbleToReturnToClassicUser,
 }) => (
   <nav style={style} aria-label="sidebar" role="menubar">
     <BufferLogo />
@@ -100,11 +103,22 @@ const AppSidebar = ({
             >
               Preferences
             </PopoverMenuItem>
-            {activeProduct === 'publish' && (
-              <PopoverMenuItem href="#" onClick={onUpgradeToProClick}>
-                ★ Upgrade to Pro
-              </PopoverMenuItem>
-            )}
+            {activeProduct === 'publish' &&
+              isAbleToReturnToClassicUser && (
+                <PopoverMenuItem
+                  href="#"
+                  onClick={onReturnToClassicClick}
+                  highlight
+                >
+                  Back to Classic Design
+                </PopoverMenuItem>
+              )}
+            {activeProduct === 'publish' &&
+              isProUpgradeUser && (
+                <PopoverMenuItem href="#" onClick={onUpgradeToProClick}>
+                  ★ Upgrade to Pro
+                </PopoverMenuItem>
+              )}
             <Divider color="sidebarBackgroundBlue" />
             <PopoverMenuItem
               href={logoutUrl({
@@ -131,10 +145,16 @@ AppSidebar.propTypes = {
   environment: PropTypes.string.isRequired,
   onMenuItemClick: PropTypes.func.isRequired,
   onUpgradeToProClick: PropTypes.func.isRequired,
+  onReturnToClassicClick: PropTypes.func.isRequired,
+  isProUpgradeUser: PropTypes.bool,
+  isAbleToReturnToClassicUser: PropTypes.bool,
 }
 
 AppSidebar.defaultProps = {
   activeProduct: 'publish',
+  isProUpgradeUser: false,
+  isAbleToReturnToClassicUser: false,
+  onReturnToClassicClick: () => {},
 }
 
 export default AppSidebar
