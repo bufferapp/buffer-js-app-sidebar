@@ -110,7 +110,7 @@ const AppSidebar = ({
                   onClick={onReturnToClassicClick}
                   highlight
                 >
-                  Back to Classic Design
+                  Switch back to classic Buffer
                 </PopoverMenuItem>
               )}
             {activeProduct === 'publish' &&
