@@ -108,7 +108,6 @@ const AppSidebar = ({
                 <PopoverMenuItem
                   href="#"
                   onClick={onReturnToClassicClick}
-                  highlight
                 >
                   Switch back to classic Buffer
                 </PopoverMenuItem>
