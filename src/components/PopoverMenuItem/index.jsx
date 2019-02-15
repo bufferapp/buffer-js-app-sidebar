@@ -13,7 +13,7 @@ const handleOnClick = onClick => e => {
 
 class PopoverMenuItem extends PseudoClassComponent {
   render() {
-    const { href, children, subtitle, onClick, highlight } = this.props
+    const { href, children, subtitle, onClick } = this.props
     const mainLinkStyle = {
       display: 'block',
       color: '#fff',
@@ -40,7 +40,17 @@ class PopoverMenuItem extends PseudoClassComponent {
         hovered: this.state.hovered,
       },
     )
-    const listStyle = highlight ? { backgroundColor: '#1b2a3a' } : {}
+
+    const listStyle = calculateStyles({
+        default: {},
+        hovered: {
+          backgroundColor: '#1b2a3a',
+        },
+      },
+      {
+        hovered: this.state.hovered,
+      },
+    )
 
     return (
       <li
@@ -79,11 +89,6 @@ PopoverMenuItem.propTypes = {
   href: PropTypes.string,
   children: PropTypes.node,
   subtitle: PropTypes.node,
-  highlight: PropTypes.bool,
-}
-
-PopoverMenuItem.defaultProps = {
-  highlight: false,
 }
 
 export default PopoverMenuItem
