@@ -3,7 +3,7 @@ import {
   actionTypes as dataFetchActionTypes,
 } from '@bufferapp/async-data-fetch'
 
-const maxRandomValue = 11
+const maxRandomValue = 10 * 7
 const getRandomInt = () => {
   return Math.floor(Math.random() * Math.floor(maxRandomValue))
 }
