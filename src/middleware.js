@@ -17,7 +17,7 @@ export default ({ dispatch, getState }) => next => action => {
       const { planName } = getState().productFeatures
       if (window && window.FS && window.FS.identify) {
         window.FS.identify(action.result.id, {
-          pricingPlan_str: planName || 'free',
+          pricingPlan_str: planName,
         })
       }
       break
