@@ -30,6 +30,10 @@ const style = calculateStyles({
     justifyContent: 'center',
     maxWidth: '65px',
     zIndex: navbar,
+    position: 'sticky',
+    bottom: 0,
+    top: 0,
+    height: 'calc(100vh - 2rem)',
   },
 })
 
