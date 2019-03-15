@@ -78,7 +78,8 @@ const AppSidebar = ({
         label="Help and Support"
         popoverPosition="above"
       >
-        <PopoverMenu title="Help & Support">
+        <PopoverMenu>
+          <PopoverMenuItem href="https://buffer.com/support">Help &amp; Support</PopoverMenuItem>
           <PopoverMenuItem href="https://faq.buffer.com">FAQ</PopoverMenuItem>
           <PopoverMenuItem href="http://status.buffer.com/">
             Status
