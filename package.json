@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/app-sidebar",
-  "version": "1.11.1",
+  "version": "1.11.2",
   "description": "Display application notifications",
   "main": "lib/index.js",
   "scripts": {
