@@ -67,7 +67,7 @@ const AppSidebar = ({
       icon={<AnalyzeIcon />}
       active={activeProduct === 'analyze'}
       label="Analyze"
-      href="https://buffer.com/analyze"
+      href="https://analyze.buffer.com/"
       newWindow
     />
 
