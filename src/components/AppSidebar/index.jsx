@@ -87,7 +87,7 @@ const AppSidebar = ({
           <PopoverMenuItem href="https://buffer.com/pricing">
             Pricing &amp; Plans
           </PopoverMenuItem>
-          <PopoverMenuItem href="https://buffersurvey.typeform.com/to/ZEiVmL">
+          <PopoverMenuItem href="https://buffer.com/feature-request">
             Wishlist
           </PopoverMenuItem>
         </PopoverMenu>
