@@ -80,7 +80,7 @@ const AppSidebar = ({
       >
         <PopoverMenu>
           <PopoverMenuItem href="https://buffer.com/support">Help &amp; Support</PopoverMenuItem>
-          <PopoverMenuItem href="https://faq.buffer.com">FAQ</PopoverMenuItem>
+          <PopoverMenuItem href="https://support.buffer.com/hc/en-us">FAQ</PopoverMenuItem>
           <PopoverMenuItem href="http://status.buffer.com/">
             Status
           </PopoverMenuItem>
