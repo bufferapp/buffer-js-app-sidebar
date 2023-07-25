@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { geyser } from '@bufferapp/components/style/color'
+import { geyser } from '@bufferapp/components/lib/style/color'
 import { AvatarIcon } from '@bufferapp/components'
 
 const UserAvatar = ({ color, size }) => {

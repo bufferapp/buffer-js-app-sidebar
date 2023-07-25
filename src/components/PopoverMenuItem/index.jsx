@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { calculateStyles } from '@bufferapp/components/lib/utils'
-import { geyser } from '@bufferapp/components/style/color'
+import { calculateStyles } from '@bufferapp/components/lib/lib/utils'
+import { geyser } from '@bufferapp/components/lib/style/color'
 import { PseudoClassComponent } from '@bufferapp/components'
 
 const handleOnClick = onClick => e => {

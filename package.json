@@ -22,7 +22,7 @@
     "@bufferapp/session-manager": "0.7.1"
   },
   "devDependencies": {
-    "@bufferapp/components": "3.0.2",
+    "@bufferapp/components": "^4.0.0",
     "@storybook/addon-actions": "^3.4.11",
     "@storybook/core": "^3.4.11",
     "@storybook/react": "^3.4.11",
@@ -52,7 +52,7 @@
     "storybook-addon-a11y": "^3.1.9"
   },
   "peerDependencies": {
-    "@bufferapp/components": "3.x",
+    "@bufferapp/components": "4.x",
     "prop-types": "15.x",
     "react": "16.x",
     "react-dom": "16.x",

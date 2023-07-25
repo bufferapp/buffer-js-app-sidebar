@@ -9,9 +9,9 @@ import {
   Divider,
 } from '@bufferapp/components'
 
-import { calculateStyles } from '@bufferapp/components/lib/utils'
-import { sidebarBackgroundBlue } from '@bufferapp/components/style/color'
-import { navbar } from '@bufferapp/components/style/zIndex'
+import { calculateStyles } from '@bufferapp/components/lib/lib/utils'
+import { sidebarBackgroundBlue } from '@bufferapp/components/lib/style/color'
+import { navbar } from '@bufferapp/components/lib/style/zIndex'
 import { logoutUrl } from '@bufferapp/session-manager'
 import PopoverButton from '../PopoverButton'
 import BufferLogo from '../BufferLogo'

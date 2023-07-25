@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { PseudoClassComponent, ArrowPopover } from '@bufferapp/components'
-import { calculateStyles } from '@bufferapp/components/lib/utils'
+import { calculateStyles } from '@bufferapp/components/lib/lib/utils'
 import {
   curiousBlue,
   curiousBlueLight,
   sidebarBackgroundBlue,
-} from '@bufferapp/components/style/color'
-import { borderRadius } from '@bufferapp/components/style/border'
+} from '@bufferapp/components/lib/style/color'
+import { borderRadius } from '@bufferapp/components/lib/style/border'
 
 const KEY_SPACE = 32
 const KEY_ENTER = 13
